@@ -1,13 +1,13 @@
-def build_array(size, incr)
+def build_array
 # builds an array of elements from 0 to (size-1) in increments of incr
   i = 0
   numbers = []
 
-  while i < size
+  for i in 0..5
     puts "At the top i is #{i}."
     numbers.push(i)
 
-    i = i + incr
+  i = i + 1
     puts "Numbers now: #{numbers}"
     puts "At the bottom i is #{i}."
   end
@@ -19,4 +19,6 @@ def build_array(size, incr)
   end
 end
 
-build_array(100,10)
+build_array
+
+#  Don't need the incrementor in the middle anymore, but nothing happens if I leave it in.
